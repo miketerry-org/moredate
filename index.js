@@ -91,7 +91,8 @@ class MoreDate extends Date {
     value.setHours(0, 0, 0, 0); // Set time to midnight
     value.setDate(value.getDate() - 1); // subtract one day from the current date
     return value;
+  }
 }
 
 // Export the BetterDate class
-module.exports = BetterDate;
+module.exports = MoreDate;

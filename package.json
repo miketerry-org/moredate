@@ -1,6 +1,6 @@
 {
   "name": "moredate",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "More date minipulations in the MoreDate class",
   "main": "index.js",
   "directories": {
@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/miketerry-org/moredate/issues"
   },
-  "homepage": "https://github.com/miketerry-org/moredate#readme"
+  "homepage": "https://github.com/miketerry-org/moredate#readme",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
 }

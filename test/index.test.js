@@ -1,13 +1,14 @@
 // index.test.js:
 
-// load all necessary modules
-const BetterDate = require("../index.js");
+"use strict";
 
-describe("BetterDate", () => {
-  describe("BetterDate.parse", () => {
+// load all necessary modules
+const MoreDate = require("../index.js");
+
+describe("MoreDate", () => {
+  describe("MoreDate.parseDate", () => {
     it('"2025-03-21" is valid date', () => {
-      let value = BetterDate.parse("2025-03-20");
-      console.log("today", BetterDate.today);
+      let value = MoreDate.parseDate("2025-03-20");
     });
   });
 });
