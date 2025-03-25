@@ -1,6 +1,6 @@
 {
   "name": "moredate",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "More date minipulations in the MoreDate class",
   "main": "index.js",
   "directories": {
