@@ -19,14 +19,14 @@ class MoreDate extends Date {
    * If the value is of any other type or the string cannot be parsed, it returns NaN.
    *
    * @param {*} value - The value to parse.
-   * @returns {Date|NaN} - Returns a Date object if the value is a valid date or string, or NaN if parsing fails.
+   * @returns {MoreDate|NaN} - Returns a Date object if the value is a valid date or string, or NaN if parsing fails.
    */
-  static parse(value) {
+  static parseDate(value) {
     // if value is not a date
     if (!this.isDate(value)) {
       // if value is a string then attempt to parse it
       if (typeof value === "string") {
-        value = new Date(value);
+        value = new MoreDate(value);
 
         // if parsing fails then return NaN
         if (!this.isDate(value)) {
@@ -48,7 +48,7 @@ class MoreDate extends Date {
    * @param {Date} value2 - The second Date object to compare.
    * @returns {boolean} - Returns true if the two Date objects represent the same date and time, false otherwise.
    */
-  static same(value1, value2) {
+  static sameDates(value1, value2) {
     // Check if both values are valid Date objects
     if (!(value1 instanceof Date) || !(value2 instanceof Date)) {
       return false;
@@ -64,7 +64,7 @@ class MoreDate extends Date {
    * @returns {Date} - A Date object for today, with time set to midnight.
    */
   static get today() {
-    const value = new Date();
+    const value = new MoreDate();
     value.setHours(0, 0, 0, 0); // Set time to midnight
     return value;
   }
@@ -75,10 +75,10 @@ class MoreDate extends Date {
    * @returns {Date} - A Date object for tomorrow, with time set to midnight.
    */
   static get tomorrow() {
-    const value = new Date();
+    const value = new MoreDate();
     value.setHours(0, 0, 0, 0); // Set time to midnight
     value.setDate(value.getDate() + 1); // Add one day to the current date
-    return now;
+    return value;
   }
 
   /**
@@ -87,11 +87,10 @@ class MoreDate extends Date {
    * @returns {Date} - A Date object for yesterday, with time set to midnight.
    */
   static get yesterday() {
-    const value = new Date();
+    const value = new MoreDate();
     value.setHours(0, 0, 0, 0); // Set time to midnight
-    value.setDate(now.getDate() - 1); // Subtract one day from the current date
+    value.setDate(value.getDate() - 1); // subtract one day from the current date
     return value;
-  }
 }
 
 // Export the BetterDate class
