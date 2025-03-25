@@ -1,7 +1,7 @@
 {
-  "name": "moredate,
+  "name": "moredate",
   "version": "0.0.1",
-  "description": "BetterDate class extends Date and adds more date/time utility methods/properties",
+  "description": "MoreDate class extends Date and adds additional date/time utility methods/properties",
   "main": "index.js",
   "scripts": {
     "dev": "NODE_ENV=dev node --watch index.js",
@@ -9,10 +9,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/miketerry-org/better-moredate.git"
+    "url": "git+https://github.com/miketerry-org/moredate.git"
   },
   "keywords": [
-    "better",
+    "more",
     "date",
     "time",
     "enhanced",
@@ -24,9 +24,9 @@
   "author": "Mike Terry",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/miketerry-org/better-date/issues"
+    "url": "https://github.com/miketerry-org/moredate/issues"
   },
-  "homepage": "https://github.com/miketerry-org/better-date#readme",
+  "homepage": "https://github.com/miketerry-org/moredate#readme",
   "devDependencies": {
     "jest": "^29.7.0"
   },
