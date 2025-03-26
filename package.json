@@ -1,13 +1,18 @@
 {
   "name": "moredate",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "description": "More date minipulations in the MoreDate class",
   "main": "index.js",
+  "scripts": {
+    "test": "jest --watch",
+    "gendoc": "jsdoc index.js -d docs",
+    "stats": "sloc . --exclude node_modules"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
   "directories": {
     "test": "test"
-  },
-  "scripts": {
-    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -23,8 +28,5 @@
   "bugs": {
     "url": "https://github.com/miketerry-org/moredate/issues"
   },
-  "homepage": "https://github.com/miketerry-org/moredate#readme",
-  "devDependencies": {
-    "jest": "^29.7.0"
-  }
+  "homepage": "https://github.com/miketerry-org/moredate#readme"
 }
